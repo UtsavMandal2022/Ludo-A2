@@ -1,0 +1,150 @@
+body
+{
+    background-image: url(images/back.png);
+}
+.ground
+{display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+h1
+{
+    text-align: center;
+    font-size: 100px;
+}
+h1::first-letter
+{
+    color: blue;
+}
+h1 .u{
+color: red;
+}
+h1 .D
+{
+    color: green;
+}
+h1 .o
+{
+    color: yellow;
+}
+.board
+{
+    border: 8px solid green;
+}
+.redlocker
+{
+    border: 10px double red;
+    position: relative;
+    left: -10%;
+    top: -210px;
+}
+.bluelocker
+{
+    border: 10px double blue;
+    position: relative;
+    left: 10%;
+    top: 210px;
+}
+.locker td
+{
+    height: 70px;
+    width: 70px;
+}
+.Re{
+    border: 2px solid black;
+    background-color: #eb7d7d;
+}
+.Be{
+    border: 2px solid black;
+    background-color:#5ba6bf;
+}
+td
+{
+    height: 70px;
+    width: 70px;
+} 
+.null
+{
+    border: 2px solid black;
+    background-color: #d5ff8e;
+} 
+.redt
+{
+    border: 4px solid red;
+    background-color: red;
+    border-radius: 70px;
+}
+.reds
+{
+    border: 4px solid red;
+    background-color: #ec6262;    
+}
+.rede
+{
+    border: 4px solid red;
+    background-color: red;    
+}
+.blues
+{
+    border: 4px solid blue;
+    background-color: lightblue;   
+}
+.bluee
+{
+    border: 4px solid blue;
+    background-color: blue;   
+}
+.bluet
+{
+    border: 4px solid blue;
+    background-color: blue;
+    border-radius: 70px;   
+}
+.Red-turn
+{
+    color: red;
+    font-weight: bold;
+    border: 2px solid black;
+display: inline-block;
+width: 30%;
+}
+.Blue-turn
+{
+    color: lightgrey;
+    font-weight: bold;
+    border: 2px solid black;
+display: inline-block;
+width: 30%;
+text-align: right;
+}
+.indexb
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#roll
+{
+width: 100px;
+}
+input
+{
+    width: 30px;
+    height: 30px;
+    padding: 4px;   
+}
+h1 span:hover
+{
+    font-size: 150px;
+}
+#reset
+{
+    background-color: black;
+    color: white;
+    width: 50px;
+}
+#reset:hover
+{
+    padding: 8px;
+}

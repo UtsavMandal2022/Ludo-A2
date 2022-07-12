@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><span>L</span><span class="u">u</span><span class="D">D</span><span class="o">o</span></h1>
+    <input type="button" value="Reset" id="reset" onclick="reset()">
+    <div class="ground">
+    <table class="redlocker">
+    <tr><td class="redt Re r0"></td><td class="redt Re rl"></td></tr>
+    <tr><td class="redt Re rl"></td><td class="redt Re rl"></td></tr>
+    </table>
+    <table class="Board">
+        <tr>
+            <td class="reds r1" id="15"></td><td class="null r2" id="16" ></td> <td class="null r3" id="17"></td> <td class="null r4" id="18"></td><td class="null r5" id="19"></td><td class="null r6" id="20"></td> <td class="null r7" id="21"></td> <td class="null r8" id="22"></td> 
+        </tr>
+        <tr>
+            <td class="null r28" id="14"></td><td class="null r29" id="39" ></td> <td class="null r30" id="40"></td> <td class="null r31" id="41"></td><td class="null r32" id="42"></td><td class="null r33" id="43"></td> <td class="null r34" id="44"></td> <td class="null r9" id="23"></td> 
+        </tr>
+        <tr>
+            <td class="null r27" id="13"></td><td class="null r48" id="38" ></td> <td class="null r49" id="55"></td> <td class="null r50" id="56"></td><td class="null r51" id="57"></td><td class="null r52" id="58"></td> <td class="null r35" id="45"></td> <td class="null r10" id="24"></td> 
+        </tr>
+        <tr>
+            <td class="null r26" id="12"></td><td class="null r47" id="37" ></td> <td class="null r60" id="54"></td> <td class="null r61" id="63"></td><td class="bluee r62" id="64"></td><td class="null r53" id="59"></td> <td class="null r36" id="46"></td> <td class="null r11" id="25"></td>
+        </tr>
+        <tr>
+            <td class="null r25" id="11"></td><td class="null r46" id="36" ></td> <td class="null r59" id="53"></td> <td class="rede r64" id="62"></td><td class="null r63" id="61"></td><td class="null r54" id="60"></td> <td class="null r37" id="47"></td> <td class="null r12" id="26"></td> 
+        </tr>
+        <tr>
+            <td class="null r24" id="10"></td><td class="null r45" id="35" ></td> <td class="null r58" id="52"></td> <td class="null r57" id="51"></td><td class="null r56" id="50"></td><td class="null r55" id="49"></td> <td class="null r38" id="48"></td> <td class="null r13" id="27"></td> 
+        </tr>
+        <tr>
+            <td class="null r23" id="9"></td><td class="null r44" id="34" ></td> <td class="null r43" id="33"></td> <td class="null r42" id="32"></td><td class="null r41" id="31"></td><td class="null r40" id="30"></td> <td class="null r39" id="29"></td> <td class="null r14" id="28"></td> 
+        </tr>
+        <tr>
+            <td class="null r22" id="8"></td><td class="null r21" id="7" ></td> <td class="null r20" id="6"></td> <td class="null r19" id="5"></td><td class="null r18" id="4"></td><td class="null r17" id="3"></td> <td class="null r16" id="2"></td> <td class="blues r15" id="1"></td> 
+        </tr>
+    </table>
+    <table class="bluelocker">
+        <tr><td class="bluet Be bl" id="0"></td><td class="bluet Be bl"></td></tr>
+        <tr><td class="bluet Be bl"></td><td class="bluet Be bl"></td></tr>
+        </table>
+    </div>
+    <br>
+    <div class="indexb">
+    <div class="Red-turn">RED's turn </div>
+    <input type="button" class="dice" id="random" value="Roll">
+    <img src="images/dice.png"id="roll">
+    <div class="Blue-turn">BLUE's turn </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
