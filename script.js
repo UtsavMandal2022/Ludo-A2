@@ -33,12 +33,10 @@ function checkpos()
   if(turn)
   {
     rchk();
-    changePlayer();
   }
   else
   {
-    bchk();
-    changePlayer();
+    bchk();  
   }
 }
 
@@ -49,7 +47,9 @@ function changePlayer() {
           redturn[i].style.color = "lightGrey";
           blueturn[i].style.color = "Blue";
       }
-  } else {
+  } 
+  else 
+  {
       turn = true;
       for (let i = 0; i < blueturn.length; i++) {
           blueturn[i].style.color = "lightGrey";
@@ -68,6 +68,7 @@ function bchk()
   else
   {
     movebt();
+    changePlayer();
   }
 }
 
@@ -79,7 +80,8 @@ function rchk()
   }
   else
   {
-movert();
+  movert();
+  changePlayer();
   }
 }
 
@@ -92,6 +94,10 @@ if(roll==6)
   document.getElementById(`${1}`).classList.toggle("bluet");
   document.getElementById(`${0}`).classList.toggle("bluet"); 
   b1++;
+}
+else
+{
+  changePlayer();
 }
 return b1;
 }
@@ -106,6 +112,12 @@ b1+=roll;
   }
   console.log(b1);
  scorechkb(b1); 
+ if(document.getElementById(`${b1}`).classList.contains("redt"))
+ {
+  document.getElementById(`${b1}`).classList.toggle("redt");
+  document.querySelector(`.r${0}`).classList.toggle("redt");
+  r1=0;
+ }
 }
 
 function scorechkb(x)
@@ -113,7 +125,7 @@ function scorechkb(x)
   if(x==64)
   {
     bscore++;
-    document.getElementById(`${x}`).classList.toggle("bluet");
+    document.getElementById(`${x}`).classList.remove("bluet");
     x++;
     console.log(bscore);
   }
@@ -128,6 +140,9 @@ if(roll==6)
   document.querySelector(`.r${0}`).classList.toggle("redt");
   r1++;
 }
+else{
+  changePlayer();
+}
 return r1;
 }
 
@@ -140,20 +155,24 @@ document.querySelector(`.r${r1}`).classList.toggle("redt");
 r1+=roll;
   }
   console.log(r1);
- scorechkr(r1); 
+ scorechkr(r1);
+ if(document.querySelector(`.r${r1}`).classList.contains("bluet"))
+ {
+  document.querySelector(`.r${r1}`).classList.toggle("bluet"); 
+  document.getElementById(`${0}`).classList.toggle("bluet"); 
+  b1=0;
+ } 
 }
-
 function scorechkr(x)
 {
   if(x==64)
   {
     bscore++;
-    document.querySelector(`.r${x}`).classList.toggle("redt");
+    document.querySelector(`.r${x}`).classList.remove("redt");
     x++;
     console.log(bscore);
   }
 }
-
 
 //reset
 function reset()
